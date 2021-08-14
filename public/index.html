@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
     <script src="index.js"></script>
-    <title>Document</title>
+    <title>Majulah Automator</title>
 </head>
-<body onload="onDocumentLoad()">
-    <div class="container">
-        <h1>Invoice Generator</h1>
-        <span>Submit a formatted excel sheet and we will generate separate invoices for each line!</span>
-        <br><input type="file" id="file_input">
-        <Button onclick="getInvoice()">Click me</Button>
-        <br>
-        <br>
-        <h3>Download Sample Data to Test</h3>
-        <Button onclick="downloadData()">Download</Button>
+<body onload="onDocumentLoad()" style="margin: 0; padding: 0;">
+    <div id="header" style="display: flex; flex-direction: row; background-color: lightcoral;">
+            <img src="..\NicePng_scales-of-justice-png_623109.png" alt="No image found" style="height: 7em; padding-left: 1.5%; padding-top: 1.5%;">
+            <h1 style="padding-top: 5%;"> Team Majulah</h1>
+        </div> 
+    </div>
+
+    <div id="main_body" style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: 5.5em;">
+        <div id="content" style="display: flex; flex-direction:column; align-items: center; border-style: double; border-color: black; width: 50%; background-color: whitesmoke; border-radius: 7.5%; padding-bottom: 1.5em;">
+            <h1>Invoice Generator</h1>
+            <input type="file" id="file_input" style="margin-bottom: 1.5em; margin-left: 12em;">
+            <Button onclick="getInvoice()" style="width: 15%; margin-bottom: .5em ;">Generate Invoice</Button>
+            <a style="font-size: .7em ">Submit a formatted excel sheet and we will generate separate invoices for each line!</a>
+            <Button onclick="downloadData()" style="width: 15%; margin-top: 1.5em ; margin-bottom: .5em;">Download</Button>
+            <a style="font-size: .7em ">Download Sample Data to Test</a>
+        </div>
     </div>
 <style>
     .container {
@@ -28,12 +34,4 @@
     }
 </style>
 </body>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </html>
