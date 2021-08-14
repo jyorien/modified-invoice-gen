@@ -37,4 +37,8 @@ function getInvoice() {
     xhr.send(JSON.stringify(fileData))
 }
 
+function downloadData() {
+    window.open('/data')
+}
+
 

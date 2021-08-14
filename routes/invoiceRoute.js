@@ -9,7 +9,9 @@ function routeInvoice(app) {
     
     app.route('/invoice/:id')
         .get(invoiceData.getInvoice)
-   console.log("Invoice route runs 1st")
+   
+    app.route('/data')
+        .get(invoiceData.getData)
 }
 
 module.exports = {routeInvoice}

@@ -5,6 +5,10 @@ const fs = require('fs');
 let test = []
 class InvoiceData {
 
+    getData(req,res) {
+        res.download('invoicedata.xlsx')
+    }
+
     getInvoice(req,res) {
         res.download(req.params.id)
     }
